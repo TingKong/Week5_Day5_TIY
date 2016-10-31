@@ -60,7 +60,12 @@ textarea {
 .navbar-inverse .navbar-nav > li > a {
    color: #ffffff;
 }
-
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        color: #2a9cff;
+    }
+.navbar-nav{
+    width:81%;
+}
 
 .navbar-inverse {
     background: rgba(0,0,0,.5);
@@ -68,8 +73,15 @@ textarea {
 }
 .admin li a:hover{
 
-            background:rgba(239,157,17,.2);
+    background: #2a9cff;
     color:#fff;
+}
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td, .form-horizontal .control-label, h4{
+    color:#ddd;
+}
+
+.right{
+    float:right!important;
 }
 
 .admin ul li {
@@ -113,7 +125,7 @@ textarea {
         }
 
         .unslider .rent_buttons a:hover {
-    background: #732a2a;
+    background: #2a9cff;
     color: rgb(255, 255, 255);
     border: 1px solid #732a2a;
         }
@@ -130,3 +142,5 @@ textarea {
     margin:30px auto 50px auto!important;
     width:560px;
 }
+
+

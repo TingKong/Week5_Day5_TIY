@@ -7,13 +7,18 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/unslider-master/dist/css/unslider.css")
+    @Scripts.Render("~/bundles/jquery")
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+
 
     @if (IsSectionDefined("MyOtherJavascript"))
     {
         @RenderSection("jquery-3.1.1.min.js");
     }
 
-    @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
   
 
@@ -36,7 +41,7 @@
                     <li>@Html.ActionLink("Rent", "Create", "RentalRecords")</li>
                     <li>@Html.ActionLink("Return", "Index", "RentalRecords")</li>
                     <li>@Html.ActionLink("Overdue", "Overdue", "RentalRecords")</li>
-                    <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
+                    <li class="right">@Html.ActionLink("Admin", "Index", "Admin")</li>
 
                     @*<li>@Html.ActionLink("Movies", "Index", "Movies")</li>
                     <li>@Html.ActionLink("Customers", "Index", "Customers")</li>

@@ -5,7 +5,9 @@
 @Scripts.Render("~/unslider-master/src/js/unslider.js")
 <script>
 		jQuery(document).ready(function($) {
-			$('.my-slider').unslider();
+		    $('.my-slider').unslider({
+		        autoplay: true
+		    });
 		});
 </script>
 
