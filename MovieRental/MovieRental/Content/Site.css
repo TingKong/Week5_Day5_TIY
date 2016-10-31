@@ -32,22 +32,28 @@ textarea {
     text-decoration: none;
     color: #0062b7;
     font-size: 30px;
-    padding: 16px 20px;
-    border: 1px solid #0062b7;
+    padding: 61px 20px;
+    border: 1px solid #ddd;
     margin: 10px 10px;
-    display: block;
+    display: inline-block;
     width: 350px;
     /* height: 100px; */
     text-align: center;
     /* display: inline-block; */
-    /* float: left; */
+    float: left; 
     /* clear: both; */
-    margin: 0px auto 10px auto;
-    transition:all ease .5s;
+    margin: 10px 6px;
+        transition:all ease .5s;
         -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     color:#fff;
+}
+.clear{
+    clear:both;
+}
+
+
 }
 .navbar-inverse .navbar-brand {
 }
@@ -57,12 +63,12 @@ textarea {
 
 
 .navbar-inverse {
-    background-color: transparent; 
+    background: rgba(0,0,0,.5);
      border-color: transparent; 
 }
 .admin li a:hover{
 
-            background:#246196;
+            background:rgba(239,157,17,.2);
     color:#fff;
 }
 
@@ -73,6 +79,54 @@ textarea {
 .admin ul{
     margin-left:0px;
         padding-left: 0px;
-         margin-top: 29px;
+         margin-top: 30px;
 
+}
+.btn-default {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ddd;
+    text-transform:lowercase;
+}
+
+.btn{
+    border-radius:12px;
+}
+.unslider-arrow, .unslider-nav{
+    display:none;
+}
+
+
+
+    .unslider .rent_buttons{
+        float:right;
+        margin-top:-400px;
+        position:relative;
+        z-index:20000;
+
+    }
+        .unslider .rent_buttons a {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 50px;
+            transition:all ease .5s;
+        }
+
+        .unslider .rent_buttons a:hover {
+    background: #732a2a;
+    color: rgb(255, 255, 255);
+    border: 1px solid #732a2a;
+        }
+
+.my-slider unslider-horizontal{
+    height:500px;
+}
+
+.unslider img{
+    width:330px;
+}
+
+.unslider{
+    margin:30px auto 50px auto!important;
+    width:560px;
 }
